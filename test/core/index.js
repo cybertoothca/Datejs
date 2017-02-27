@@ -7,19 +7,19 @@ new Specification({
 'Exception Handling': {
     setup: function() {},
 	'Date.parse() : No params': {
-      run: function() { this.date = Date.parse() },
+      run: function() { this.date = Date.parsePlus() },
       assert: function() {  return null == this.date }
     },
 	'Date.parse("") : string.empty': {
-      run: function() { this.date = Date.parse('') },
+      run: function() { this.date = Date.parsePlus('') },
       assert: function() {  return null == this.date }
     },
 	'Date.parse("asdf") : Random String': {
-      run: function() { this.date = Date.parse('asdf') },
+      run: function() { this.date = Date.parsePlus('asdf') },
       assert: function() {  return null == this.date }
     },
 	'Date.parse(null) : null': {
-      run: function() { this.date = Date.parse(null) },
+      run: function() { this.date = Date.parsePlus(null) },
       assert: function() {  return null == this.date }
     },    
     '29-Sep-2008.set({ day: 31 }) : RangeError': {
@@ -245,127 +245,127 @@ new Specification({
       run: function() { 
         this.date = new Date().clearTime().next().monday();
       },
-      assert: function() { return Date.parse('next monday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next monday').equals(this.date) }
     },
     'next().tuesday()': {
       run: function() { 
         this.date = new Date().clearTime().next().tuesday();
       },
-      assert: function() { return Date.parse('next tuesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next tuesday').equals(this.date) }
     },
     'next().wednesday()': {
       run: function() { 
         this.date = new Date().clearTime().next().wednesday();
       },
-      assert: function() { return Date.parse('next wednesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next wednesday').equals(this.date) }
     },
     'next().thursday()': {
       run: function() { 
         this.date = new Date().clearTime().next().thursday();
       },
-      assert: function() { return Date.parse('next thursday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next thursday').equals(this.date) }
     },
     'next().friday()': {
       run: function() { 
         this.date = new Date().clearTime().next().friday();
       },
-      assert: function() { return Date.parse('next friday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next friday').equals(this.date) }
     },
     'next().saturday()': {
       run: function() { 
         this.date = new Date().clearTime().next().saturday();
       },
-      assert: function() { return Date.parse('next saturday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next saturday').equals(this.date) }
     },
     'next().sunday()': {
       run: function() { 
         this.date = new Date().clearTime().next().sunday();
       },
-      assert: function() { return Date.parse('next sunday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next sunday').equals(this.date) }
     },
     'last().monday()': {
       run: function() { 
         this.date = new Date().clearTime().last().monday();
       },
-      assert: function() { return Date.parse('last monday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last monday').equals(this.date) }
     },
     'last().tuesday()': {
       run: function() { 
         this.date = new Date().clearTime().last().tuesday();
       },
-      assert: function() { return Date.parse('last tuesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last tuesday').equals(this.date) }
     },
     'last().wednesday()': {
       run: function() { 
         this.date = new Date().clearTime().last().wednesday();
       },
-      assert: function() { return Date.parse('last wednesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last wednesday').equals(this.date) }
     },
     'last().thursday()': {
       run: function() { 
         this.date = new Date().clearTime().last().thursday();
       },
-      assert: function() { return Date.parse('last thursday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last thursday').equals(this.date) }
     },
     'last().friday()': {
       run: function() { 
         this.date = new Date().clearTime().last().friday();
       },
-      assert: function() { return Date.parse('last friday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last friday').equals(this.date) }
     },
     'last().saturday()': {
       run: function() { 
         this.date = new Date().clearTime().last().saturday();
       },
-      assert: function() { return Date.parse('last saturday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last saturday').equals(this.date) }
     },
     'last().sunday()': {
       run: function() { 
         this.date = new Date().clearTime().last().sunday();
       },
-      assert: function() { return Date.parse('last sunday').equals(this.date) }
+      assert: function() { return Date.parsePlus('last sunday').equals(this.date) }
     }, 
     'monday()': {
       run: function() { 
         this.date = new Date().clearTime().monday();
       },
-      assert: function() { return Date.parse('next monday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next monday').equals(this.date) }
     },
     'tuesday()': {
       run: function() { 
         this.date = new Date().clearTime().tuesday();
       },
-      assert: function() { return Date.parse('next tuesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next tuesday').equals(this.date) }
     },
     'wednesday()': {
       run: function() { 
         this.date = new Date().clearTime().wednesday();
       },
-      assert: function() { return Date.parse('next wednesday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next wednesday').equals(this.date) }
     },
     'thursday()': {
       run: function() { 
         this.date = new Date().clearTime().thursday();
       },
-      assert: function() { return Date.parse('next thursday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next thursday').equals(this.date) }
     },
     'friday()': {
       run: function() { 
         this.date = new Date().clearTime().friday();
       },
-      assert: function() { return Date.parse('next friday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next friday').equals(this.date) }
     },
     'saturday()': {
       run: function() { 
         this.date = new Date().clearTime().saturday();
       },
-      assert: function() { return Date.parse('next saturday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next saturday').equals(this.date) }
     },
     'sunday()': {
       run: function() { 
         this.date = Date.today().sunday();
       },
-      assert: function() { return Date.parse('next sunday').equals(this.date) }
+      assert: function() { return Date.parsePlus('next sunday').equals(this.date) }
     }
   },
   

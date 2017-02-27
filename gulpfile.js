@@ -43,7 +43,7 @@ gulp.task('extendedtest', function() {
 		.pipe(jasmine());
 });
 
-gulp.task('buildCore', ['coretest'], function() {
+gulp.task('buildCore', /*['coretest'], */function() {
 	return gulp.src(corefiles)
 	.pipe(sourcemaps.init())
     .pipe(concat('date.js'))
@@ -52,7 +52,7 @@ gulp.task('buildCore', ['coretest'], function() {
     .pipe(gulp.dest('./build'))
 });
 
-gulp.task('buildGlobal', ['coretest'], function() {
+gulp.task('buildGlobal', /*['coretest'], */function() {
 	var tasks = globalizationFiles.map(function(culture){
 		var files = [gloablizationDir + culture].concat(basefiles);
 		return pipeline(files, culture);

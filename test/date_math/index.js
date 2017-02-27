@@ -28,834 +28,834 @@ Date.Specification = new Specification({
           this.next_july.addYears(1);
     }, 
     't': {
-      run: function() { this.date = Date.parse('t') },
+      run: function() { this.date = Date.parsePlus('t') },
       assert: function() {  return this.today.equals( this.date) }            
     }, 
     'today+': {
-      run: function() { this.date = Date.parse('today+') },
+      run: function() { this.date = Date.parsePlus('today+') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     },
     't+': {
-      run: function() { this.date = Date.parse('t+') },
+      run: function() { this.date = Date.parsePlus('t+') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
 
     't+1 d': {
-      run: function() { this.date = Date.parse('t+1 d') },
+      run: function() { this.date = Date.parsePlus('t+1 d') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
     't + 1 d': {
-      run: function() { this.date = Date.parse('t + 1 d') },
+      run: function() { this.date = Date.parsePlus('t + 1 d') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     }, 
     'today + 1 d': {
-      run: function() { this.date = Date.parse('today + 1 d') },
+      run: function() { this.date = Date.parsePlus('today + 1 d') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     },
 
     't+1 day': {
-      run: function() { this.date = Date.parse('t+1 day') },
+      run: function() { this.date = Date.parsePlus('t+1 day') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
     't + 1 day': {
-      run: function() { this.date = Date.parse('t + 1 day') },
+      run: function() { this.date = Date.parsePlus('t + 1 day') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     },
     'today + 1 day': {
-      run: function() { this.date = Date.parse('today + 1 day') },
+      run: function() { this.date = Date.parsePlus('today + 1 day') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     },     
         
     'today+5': {
-      run: function() { this.date = Date.parse('today+5') },
+      run: function() { this.date = Date.parsePlus('today+5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     't+5': {
-      run: function() { this.date = Date.parse('t+5') },
+      run: function() { this.date = Date.parsePlus('t+5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     't + 5': {
-      run: function() { this.date = Date.parse('t + 5') },
+      run: function() { this.date = Date.parsePlus('t + 5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     'today + 5': {
-      run: function() { this.date = Date.parse('today + 5') },
+      run: function() { this.date = Date.parsePlus('today + 5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     },
 
     't+5d': {
-      run: function() { this.date = Date.parse('t+5d') },
+      run: function() { this.date = Date.parsePlus('t+5d') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     't + 5d': {
-      run: function() { this.date = Date.parse('t + 5d') },
+      run: function() { this.date = Date.parsePlus('t + 5d') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     'today + 5d': {
-      run: function() { this.date = Date.parse('today + 5d') },
+      run: function() { this.date = Date.parsePlus('today + 5d') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
 
     't+5days': {
-      run: function() { this.date = Date.parse('t+5days') },
+      run: function() { this.date = Date.parsePlus('t+5days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     't + 5days': {
-      run: function() { this.date = Date.parse('t + 5days') },
+      run: function() { this.date = Date.parsePlus('t + 5days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     'today + 5days': {
-      run: function() { this.date = Date.parse('today + 5days') },
+      run: function() { this.date = Date.parsePlus('today + 5days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     },         
     
     't+5 days': {
-      run: function() { this.date = Date.parse('t+5 days') },
+      run: function() { this.date = Date.parsePlus('t+5 days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     't + 5 days': {
-      run: function() { this.date = Date.parse('t + 5 days') },
+      run: function() { this.date = Date.parsePlus('t + 5 days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     'today + 5 days': {
-      run: function() { this.date = Date.parse('today + 5 days') },
+      run: function() { this.date = Date.parsePlus('today + 5 days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     },    
 
     't+1 m': {
-      run: function() { this.date = Date.parse('t+1 m') },
+      run: function() { this.date = Date.parsePlus('t+1 m') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }            
     }, 
     't + 1 m': {
-      run: function() { this.date = Date.parse('t + 1 m') },
+      run: function() { this.date = Date.parsePlus('t + 1 m') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     }, 
     'today + 1 m': {
-      run: function() { this.date = Date.parse('today + 1 m') },
+      run: function() { this.date = Date.parsePlus('today + 1 m') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     },
 
     't+1 month': {
-      run: function() { this.date = Date.parse('t+1 month') },
+      run: function() { this.date = Date.parsePlus('t+1 month') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }            
     }, 
     't + 1 month': {
-      run: function() { this.date = Date.parse('t + 1 month') },
+      run: function() { this.date = Date.parsePlus('t + 1 month') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     }, 
     'today + 1 month': {
-      run: function() { this.date = Date.parse('today + 1 month') },
+      run: function() { this.date = Date.parsePlus('today + 1 month') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     },     
         
     't+5m': {
-      run: function() { this.date = Date.parse('t+5m') },
+      run: function() { this.date = Date.parsePlus('t+5m') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     't + 5m': {
-      run: function() { this.date = Date.parse('t + 5m') },
+      run: function() { this.date = Date.parsePlus('t + 5m') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     'today + 5m': {
-      run: function() { this.date = Date.parse('today + 5m') },
+      run: function() { this.date = Date.parsePlus('today + 5m') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
 
     't+5months': {
-      run: function() { this.date = Date.parse('t+5months') },
+      run: function() { this.date = Date.parsePlus('t+5months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     't + 5months': {
-      run: function() { this.date = Date.parse('t + 5months') },
+      run: function() { this.date = Date.parsePlus('t + 5months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     'today + 5months': {
-      run: function() { this.date = Date.parse('today + 5months') },
+      run: function() { this.date = Date.parsePlus('today + 5months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     },         
     
     't+5 months': {
-      run: function() { this.date = Date.parse('t+5 months') },
+      run: function() { this.date = Date.parsePlus('t+5 months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     't + 5 months': {
-      run: function() { this.date = Date.parse('t + 5 months') },
+      run: function() { this.date = Date.parsePlus('t + 5 months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     'today + 5 months': {
-      run: function() { this.date = Date.parse('today + 5 months') },
+      run: function() { this.date = Date.parsePlus('today + 5 months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     },  
       
     't+1 y': {
-      run: function() { this.date = Date.parse('t+1 y') },
+      run: function() { this.date = Date.parsePlus('t+1 y') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }            
     }, 
     't + 1 y': {
-      run: function() { this.date = Date.parse('t + 1 y') },
+      run: function() { this.date = Date.parsePlus('t + 1 y') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     }, 
     'today + 1 y': {
-      run: function() { this.date = Date.parse('today + 1 y') },
+      run: function() { this.date = Date.parsePlus('today + 1 y') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     },
 
     't+1 year': {
-      run: function() { this.date = Date.parse('t+1 year') },
+      run: function() { this.date = Date.parsePlus('t+1 year') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }            
     }, 
     't + 1 year': {
-      run: function() { this.date = Date.parse('t + 1 year') },
+      run: function() { this.date = Date.parsePlus('t + 1 year') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     }, 
     'today + 1 year': {
-      run: function() { this.date = Date.parse('today + 1 year') },
+      run: function() { this.date = Date.parsePlus('today + 1 year') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     },     
         
     't+5y': {
-      run: function() { this.date = Date.parse('t+5y') },
+      run: function() { this.date = Date.parsePlus('t+5y') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     't + 5y': {
-      run: function() { this.date = Date.parse('t + 5y') },
+      run: function() { this.date = Date.parsePlus('t + 5y') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     'today + 5y': {
-      run: function() { this.date = Date.parse('today + 5y') },
+      run: function() { this.date = Date.parsePlus('today + 5y') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
 
     't+5years': {
-      run: function() { this.date = Date.parse('t+5years') },
+      run: function() { this.date = Date.parsePlus('t+5years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     't + 5years': {
-      run: function() { this.date = Date.parse('t + 5years') },
+      run: function() { this.date = Date.parsePlus('t + 5years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     'today + 5years': {
-      run: function() { this.date = Date.parse('today + 5years') },
+      run: function() { this.date = Date.parsePlus('today + 5years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     },         
     
     't+5 years': {
-      run: function() { this.date = Date.parse('t+5 years') },
+      run: function() { this.date = Date.parsePlus('t+5 years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     't + 5 years': {
-      run: function() { this.date = Date.parse('t + 5 years') },
+      run: function() { this.date = Date.parsePlus('t + 5 years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     'today + 5 years': {
-      run: function() { this.date = Date.parse('today + 5 years') },
+      run: function() { this.date = Date.parsePlus('today + 5 years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     },
     
     'today-': {
-      run: function() { this.date = Date.parse('today-') },
+      run: function() { this.date = Date.parsePlus('today-') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     },
     't-': {
-      run: function() { this.date = Date.parse('t-') },
+      run: function() { this.date = Date.parsePlus('t-') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
 
     't-1 d': {
-      run: function() { this.date = Date.parse('t-1 d') },
+      run: function() { this.date = Date.parsePlus('t-1 d') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
     't - 1 d': {
-      run: function() { this.date = Date.parse('t - 1 d') },
+      run: function() { this.date = Date.parsePlus('t - 1 d') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     }, 
     'today - 1 d': {
-      run: function() { this.date = Date.parse('today - 1 d') },
+      run: function() { this.date = Date.parsePlus('today - 1 d') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     },
 
     't-1 day': {
-      run: function() { this.date = Date.parse('t-1 day') },
+      run: function() { this.date = Date.parsePlus('t-1 day') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
     't - 1 day': {
-      run: function() { this.date = Date.parse('t - 1 day') },
+      run: function() { this.date = Date.parsePlus('t - 1 day') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     }, 
     'today - 1 day': {
-      run: function() { this.date = Date.parse('today - 1 day') },
+      run: function() { this.date = Date.parsePlus('today - 1 day') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     },     
         
     'today-5': {
-      run: function() { this.date = Date.parse('today-5') },
+      run: function() { this.date = Date.parsePlus('today-5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     't-5': {
-      run: function() { this.date = Date.parse('t-5') },
+      run: function() { this.date = Date.parsePlus('t-5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     't - 5': {
-      run: function() { this.date = Date.parse('t - 5') },
+      run: function() { this.date = Date.parsePlus('t - 5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     'today - 5': {
-      run: function() { this.date = Date.parse('today - 5') },
+      run: function() { this.date = Date.parsePlus('today - 5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     },
 
     't-5d': {
-      run: function() { this.date = Date.parse('t-5d') },
+      run: function() { this.date = Date.parsePlus('t-5d') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     't - 5d': {
-      run: function() { this.date = Date.parse('t - 5d') },
+      run: function() { this.date = Date.parsePlus('t - 5d') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     'today - 5d': {
-      run: function() { this.date = Date.parse('today - 5d') },
+      run: function() { this.date = Date.parsePlus('today - 5d') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
 
     't-5days': {
-      run: function() { this.date = Date.parse('t-5days') },
+      run: function() { this.date = Date.parsePlus('t-5days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     't - 5days': {
-      run: function() { this.date = Date.parse('t - 5days') },
+      run: function() { this.date = Date.parsePlus('t - 5days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     'today - 5days': {
-      run: function() { this.date = Date.parse('today - 5days') },
+      run: function() { this.date = Date.parsePlus('today - 5days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     },         
     
     't-5 days': {
-      run: function() { this.date = Date.parse('t-5 days') },
+      run: function() { this.date = Date.parsePlus('t-5 days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     't - 5 days': {
-      run: function() { this.date = Date.parse('t - 5 days') },
+      run: function() { this.date = Date.parsePlus('t - 5 days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     'today - 5 days': {
-      run: function() { this.date = Date.parse('today - 5 days') },
+      run: function() { this.date = Date.parsePlus('today - 5 days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     },    
     't-1 m': {
-      run: function() { this.date = Date.parse('t-1 m') },
+      run: function() { this.date = Date.parsePlus('t-1 m') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }            
     }, 
     't - 1 m': {
-      run: function() { this.date = Date.parse('t - 1 m') },
+      run: function() { this.date = Date.parsePlus('t - 1 m') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     }, 
     'today - 1 m': {
-      run: function() { this.date = Date.parse('today - 1 m') },
+      run: function() { this.date = Date.parsePlus('today - 1 m') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     },
     't-1 month': {
-      run: function() { this.date = Date.parse('t-1 month') },
+      run: function() { this.date = Date.parsePlus('t-1 month') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }            
     }, 
     't - 1 month': {
-      run: function() { this.date = Date.parse('t - 1 month') },
+      run: function() { this.date = Date.parsePlus('t - 1 month') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     }, 
     'today - 1 month': {
-      run: function() { this.date = Date.parse('today - 1 month') },
+      run: function() { this.date = Date.parsePlus('today - 1 month') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     },     
     't-5m': {
-      run: function() { this.date = Date.parse('t-5m') },
+      run: function() { this.date = Date.parsePlus('t-5m') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     't - 5m': {
-      run: function() { this.date = Date.parse('t - 5m') },
+      run: function() { this.date = Date.parsePlus('t - 5m') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     'today - 5m': {
-      run: function() { this.date = Date.parse('today - 5m') },
+      run: function() { this.date = Date.parsePlus('today - 5m') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     't-5months': {
-      run: function() { this.date = Date.parse('t-5months') },
+      run: function() { this.date = Date.parsePlus('t-5months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     't - 5months': {
-      run: function() { this.date = Date.parse('t - 5months') },
+      run: function() { this.date = Date.parsePlus('t - 5months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     'today - 5months': {
-      run: function() { this.date = Date.parse('today - 5months') },
+      run: function() { this.date = Date.parsePlus('today - 5months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     },         
     't-5 months': {
-      run: function() { this.date = Date.parse('t-5 months') },
+      run: function() { this.date = Date.parsePlus('t-5 months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     't - 5 months': {
-      run: function() { this.date = Date.parse('t - 5 months') },
+      run: function() { this.date = Date.parsePlus('t - 5 months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     'today - 5 months': {
-      run: function() { this.date = Date.parse('today - 5 months') },
+      run: function() { this.date = Date.parsePlus('today - 5 months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     },  
     't-1 y': {
-      run: function() { this.date = Date.parse('t-1 y') },
+      run: function() { this.date = Date.parsePlus('t-1 y') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }            
     }, 
     't - 1 y': {
-      run: function() { this.date = Date.parse('t - 1 y') },
+      run: function() { this.date = Date.parsePlus('t - 1 y') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }
     }, 
     'today - 1 y': {
-      run: function() { this.date = Date.parse('today - 1 y') },
+      run: function() { this.date = Date.parsePlus('today - 1 y') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }
     },
     't-1 year': {
-      run: function() { this.date = Date.parse('t-1 year') },
+      run: function() { this.date = Date.parsePlus('t-1 year') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }            
     }, 
     't - 1 year': {
-      run: function() { this.date = Date.parse('t - 1 year') },
+      run: function() { this.date = Date.parsePlus('t - 1 year') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }
     }, 
     'today - 1 year': {
-      run: function() { this.date = Date.parse('today - 1 year') },
+      run: function() { this.date = Date.parsePlus('today - 1 year') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }
     },     
     't-5y': {
-      run: function() { this.date = Date.parse('t-5y') },
+      run: function() { this.date = Date.parsePlus('t-5y') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     't - 5y': {
-      run: function() { this.date = Date.parse('t - 5y') },
+      run: function() { this.date = Date.parsePlus('t - 5y') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
     'today - 5y': {
-      run: function() { this.date = Date.parse('today - 5y') },
+      run: function() { this.date = Date.parsePlus('today - 5y') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
 
     't-5years': {
-      run: function() { this.date = Date.parse('t-5years') },
+      run: function() { this.date = Date.parsePlus('t-5years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     't - 5years': {
-      run: function() { this.date = Date.parse('t - 5years') },
+      run: function() { this.date = Date.parsePlus('t - 5years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
     'today - 5years': {
-      run: function() { this.date = Date.parse('today - 5years') },
+      run: function() { this.date = Date.parsePlus('today - 5years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     },         
     
     't-5 years': {
-      run: function() { this.date = Date.parse('t-5 years') },
+      run: function() { this.date = Date.parsePlus('t-5 years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     't - 5 years': {
-      run: function() { this.date = Date.parse('t - 5 years') },
+      run: function() { this.date = Date.parsePlus('t - 5 years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
     'today - 5 years': {
-      run: function() { this.date = Date.parse('today - 5 years') },
+      run: function() { this.date = Date.parsePlus('today - 5 years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     },
 	'+': {
-      run: function() { this.date = Date.parse('+') },
+      run: function() { this.date = Date.parsePlus('+') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
 
     '+1 d': {
-      run: function() { this.date = Date.parse('+1 d') },
+      run: function() { this.date = Date.parsePlus('+1 d') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
     '+ 1 d': {
-      run: function() { this.date = Date.parse('+ 1 d') },
+      run: function() { this.date = Date.parsePlus('+ 1 d') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     }, 
     '+1 day': {
-      run: function() { this.date = Date.parse('+1 day') },
+      run: function() { this.date = Date.parsePlus('+1 day') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }            
     }, 
     '+ 1 day': {
-      run: function() { this.date = Date.parse('+ 1 day') },
+      run: function() { this.date = Date.parsePlus('+ 1 day') },
       assert: function() {  return this.today.addDays(1).equals( this.date ) }
     },
     '+5': {
-      run: function() { this.date = Date.parse('+5') },
+      run: function() { this.date = Date.parsePlus('+5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     '+ 5': {
-      run: function() { this.date = Date.parse('+ 5') },
+      run: function() { this.date = Date.parsePlus('+ 5') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     '+5d': {
-      run: function() { this.date = Date.parse('+5d') },
+      run: function() { this.date = Date.parsePlus('+5d') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     '+ 5d': {
-      run: function() { this.date = Date.parse('+ 5d') },
+      run: function() { this.date = Date.parsePlus('+ 5d') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     '+5days': {
-      run: function() { this.date = Date.parse('+5days') },
+      run: function() { this.date = Date.parsePlus('+5days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     '+ 5days': {
-      run: function() { this.date = Date.parse('+ 5days') },
+      run: function() { this.date = Date.parsePlus('+ 5days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     '+5 days': {
-      run: function() { this.date = Date.parse('+5 days') },
+      run: function() { this.date = Date.parsePlus('+5 days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }            
     }, 
     '+ 5 days': {
-      run: function() { this.date = Date.parse('+ 5 days') },
+      run: function() { this.date = Date.parsePlus('+ 5 days') },
       assert: function() {  return this.today.addDays(5).equals( this.date ) }
     }, 
     '+1 m': {
-      run: function() { this.date = Date.parse('+1 m') },
+      run: function() { this.date = Date.parsePlus('+1 m') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }            
     }, 
     '+ 1 m': {
-      run: function() { this.date = Date.parse('+ 1 m') },
+      run: function() { this.date = Date.parsePlus('+ 1 m') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     }, 
     '+1 month': {
-      run: function() { this.date = Date.parse('+1 month') },
+      run: function() { this.date = Date.parsePlus('+1 month') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }            
     }, 
     '+ 1 month': {
-      run: function() { this.date = Date.parse('+ 1 month') },
+      run: function() { this.date = Date.parsePlus('+ 1 month') },
       assert: function() {  return this.today.addMonths(1).equals( this.date ) }
     }, 
     '+5m': {
-      run: function() { this.date = Date.parse('+5m') },
+      run: function() { this.date = Date.parsePlus('+5m') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     '+ 5m': {
-      run: function() { this.date = Date.parse('+ 5m') },
+      run: function() { this.date = Date.parsePlus('+ 5m') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     '+5months': {
-      run: function() { this.date = Date.parse('+5months') },
+      run: function() { this.date = Date.parsePlus('+5months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     '+ 5months': {
-      run: function() { this.date = Date.parse('+ 5months') },
+      run: function() { this.date = Date.parsePlus('+ 5months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     '+5 months': {
-      run: function() { this.date = Date.parse('+5 months') },
+      run: function() { this.date = Date.parsePlus('+5 months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }            
     }, 
     '+ 5 months': {
-      run: function() { this.date = Date.parse('+ 5 months') },
+      run: function() { this.date = Date.parsePlus('+ 5 months') },
       assert: function() {  return this.today.addMonths(5).equals( this.date ) }
     }, 
     '+1 y': {
-      run: function() { this.date = Date.parse('+1 y') },
+      run: function() { this.date = Date.parsePlus('+1 y') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }            
     }, 
     '+ 1 y': {
-      run: function() { this.date = Date.parse('+ 1 y') },
+      run: function() { this.date = Date.parsePlus('+ 1 y') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     }, 
     '+1 year': {
-      run: function() { this.date = Date.parse('+1 year') },
+      run: function() { this.date = Date.parsePlus('+1 year') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }            
     }, 
     '+ 1 year': {
-      run: function() { this.date = Date.parse('+ 1 year') },
+      run: function() { this.date = Date.parsePlus('+ 1 year') },
       assert: function() {  return this.today.addYears(1).equals( this.date ) }
     }, 
     '+5y': {
-      run: function() { this.date = Date.parse('+5y') },
+      run: function() { this.date = Date.parsePlus('+5y') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     '+ 5y': {
-      run: function() { this.date = Date.parse('+ 5y') },
+      run: function() { this.date = Date.parsePlus('+ 5y') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     '+5years': {
-      run: function() { this.date = Date.parse('+5years') },
+      run: function() { this.date = Date.parsePlus('+5years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     '+ 5years': {
-      run: function() { this.date = Date.parse('+ 5years') },
+      run: function() { this.date = Date.parsePlus('+ 5years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     '+5 years': {
-      run: function() { this.date = Date.parse('+5 years') },
+      run: function() { this.date = Date.parsePlus('+5 years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }            
     }, 
     '+ 5 years': {
-      run: function() { this.date = Date.parse('+ 5 years') },
+      run: function() { this.date = Date.parsePlus('+ 5 years') },
       assert: function() {  return this.today.addYears(5).equals( this.date ) }
     }, 
     '-': {
-      run: function() { this.date = Date.parse('-') },
+      run: function() { this.date = Date.parsePlus('-') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
     '-1 d': {
-      run: function() { this.date = Date.parse('-1 d') },
+      run: function() { this.date = Date.parsePlus('-1 d') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
     '- 1 d': {
-      run: function() { this.date = Date.parse(' - 1 d') },
+      run: function() { this.date = Date.parsePlus(' - 1 d') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     }, 
     '-1 day': {
-      run: function() { this.date = Date.parse('-1 day') },
+      run: function() { this.date = Date.parsePlus('-1 day') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }            
     }, 
     '- 1 day': {
-      run: function() { this.date = Date.parse(' - 1 day') },
+      run: function() { this.date = Date.parsePlus(' - 1 day') },
       assert: function() {  return this.today.addDays(-1).equals( this.date ) }
     }, 
     '-5': {
-      run: function() { this.date = Date.parse('-5') },
+      run: function() { this.date = Date.parsePlus('-5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     '- 5': {
-      run: function() { this.date = Date.parse('- 5') },
+      run: function() { this.date = Date.parsePlus('- 5') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     '-5d': {
-      run: function() { this.date = Date.parse('-5d') },
+      run: function() { this.date = Date.parsePlus('-5d') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     '- 5d': {
-      run: function() { this.date = Date.parse('- 5d') },
+      run: function() { this.date = Date.parsePlus('- 5d') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     '-5days': {
-      run: function() { this.date = Date.parse('-5days') },
+      run: function() { this.date = Date.parsePlus('-5days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     '- 5days': {
-      run: function() { this.date = Date.parse('- 5days') },
+      run: function() { this.date = Date.parsePlus('- 5days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     '-5 days': {
-      run: function() { this.date = Date.parse('-5 days') },
+      run: function() { this.date = Date.parsePlus('-5 days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }            
     }, 
     '- 5 days': {
-      run: function() { this.date = Date.parse('- 5 days') },
+      run: function() { this.date = Date.parsePlus('- 5 days') },
       assert: function() {  return this.today.addDays(-5).equals( this.date ) }
     }, 
     '-1 m': {
-      run: function() { this.date = Date.parse('-1 m') },
+      run: function() { this.date = Date.parsePlus('-1 m') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }            
     }, 
     '- 1 m': {
-      run: function() { this.date = Date.parse('- 1 m') },
+      run: function() { this.date = Date.parsePlus('- 1 m') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     }, 
     '-1 month': {
-      run: function() { this.date = Date.parse('-1 month') },
+      run: function() { this.date = Date.parsePlus('-1 month') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }            
     }, 
     '- 1 month': {
-      run: function() { this.date = Date.parse('- 1 month') },
+      run: function() { this.date = Date.parsePlus('- 1 month') },
       assert: function() {  return this.today.addMonths(-1).equals( this.date ) }
     }, 
     '-5m': {
-      run: function() { this.date = Date.parse('-5m') },
+      run: function() { this.date = Date.parsePlus('-5m') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     '- 5m': {
-      run: function() { this.date = Date.parse('- 5m') },
+      run: function() { this.date = Date.parsePlus('- 5m') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     '-5months': {
-      run: function() { this.date = Date.parse('-5months') },
+      run: function() { this.date = Date.parsePlus('-5months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     '- 5months': {
-      run: function() { this.date = Date.parse('- 5months') },
+      run: function() { this.date = Date.parsePlus('- 5months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     '-5 months': {
-      run: function() { this.date = Date.parse('-5 months') },
+      run: function() { this.date = Date.parsePlus('-5 months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }            
     }, 
     '- 5 months': {
-      run: function() { this.date = Date.parse('- 5 months') },
+      run: function() { this.date = Date.parsePlus('- 5 months') },
       assert: function() {  return this.today.addMonths(-5).equals( this.date ) }
     }, 
     '-1 y': {
-      run: function() { this.date = Date.parse('-1 y') },
+      run: function() { this.date = Date.parsePlus('-1 y') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }            
     }, 
     '- 1 y': {
-      run: function() { this.date = Date.parse('- 1 y') },
+      run: function() { this.date = Date.parsePlus('- 1 y') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }
     }, 
     '-1 year': {
-      run: function() { this.date = Date.parse('-1 year') },
+      run: function() { this.date = Date.parsePlus('-1 year') },
       assert: function() {  return this.today.addYears(-1).equals( this.date ) }            
     }, 
     '-5y': {
-      run: function() { this.date = Date.parse('-5y') },
+      run: function() { this.date = Date.parsePlus('-5y') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     '- 5y': {
-      run: function() { this.date = Date.parse('- 5y') },
+      run: function() { this.date = Date.parsePlus('- 5y') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
     '-5years': {
-      run: function() { this.date = Date.parse('-5years') },
+      run: function() { this.date = Date.parsePlus('-5years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     '- 5years': {
-      run: function() { this.date = Date.parse('- 5years') },
+      run: function() { this.date = Date.parsePlus('- 5years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     },
     '-5 years': {
-      run: function() { this.date = Date.parse('-5 years') },
+      run: function() { this.date = Date.parsePlus('-5 years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }            
     }, 
     '- 5 years': {
-      run: function() { this.date = Date.parse('- 5 years') },
+      run: function() { this.date = Date.parsePlus('- 5 years') },
       assert: function() {  return this.today.addYears(-5).equals( this.date ) }
     }, 
     '+5 second': {
       run: function() { },
-      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parse('+5 second').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parsePlus('+5 second').set({millisecond: 0}) ) }
     }, 
     '+5 Second': {
       run: function() { },
-      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parse('+5 Second').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parsePlus('+5 Second').set({millisecond: 0}) ) }
     }, 
     '-5 second': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parse('-5 second').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parsePlus('-5 second').set({millisecond: 0}) ) }
     }, 
     '-5 Second': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parse('-5 Second').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parsePlus('-5 Second').set({millisecond: 0}) ) }
     }, 
     '+5 seconds': {
       run: function() { },
-      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parse('+5 seconds').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parsePlus('+5 seconds').set({millisecond: 0}) ) }
     }, 
     '+5 Seconds': {
       run: function() { },
-      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parse('+5 Seconds').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).seconds().set({millisecond: 0}).equals( Date.parsePlus('+5 Seconds').set({millisecond: 0}) ) }
     }, 
     '-5 seconds': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parse('-5 seconds').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parsePlus('-5 seconds').set({millisecond: 0}) ) }
     }, 
     '-5 Seconds': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parse('-5 Seconds').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).seconds().set({millisecond: 0}).equals( Date.parsePlus('-5 Seconds').set({millisecond: 0}) ) }
     },
 
 
     '+5 minute': {
       run: function() { },
-      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parse('+5 minute').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parsePlus('+5 minute').set({millisecond: 0}) ) }
     }, 
     '+5 Minute': {
       run: function() { },
-      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parse('+5 Minute').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parsePlus('+5 Minute').set({millisecond: 0}) ) }
     }, 
     '-5 minute': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parse('-5 minute').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parsePlus('-5 minute').set({millisecond: 0}) ) }
     }, 
     '-5 Minute': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parse('-5 Minute').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parsePlus('-5 Minute').set({millisecond: 0}) ) }
     },
     '+5 minutes': {
       run: function() { },
-      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parse('+5 minutes').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parsePlus('+5 minutes').set({millisecond: 0}) ) }
     },     
     '+5 Minutes': {
       run: function() { },
-      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parse('+5 Minutes').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).minutes().set({millisecond: 0}).equals( Date.parsePlus('+5 Minutes').set({millisecond: 0}) ) }
     }, 
     '-5 minutes': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parse('-5 minutes').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parsePlus('-5 minutes').set({millisecond: 0}) ) }
     }, 
     '-5 Minutes': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parse('-5 Minutes').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).minutes().set({millisecond: 0}).equals( Date.parsePlus('-5 Minutes').set({millisecond: 0}) ) }
     },
     
     '+5 hour': {
       run: function() { },
-      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parse('+5 hour').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parsePlus('+5 hour').set({millisecond: 0}) ) }
     }, 
     '+5 Hour': {
       run: function() { },
-      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parse('+5 Hour').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parsePlus('+5 Hour').set({millisecond: 0}) ) }
     }, 
     '-5 hour': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parse('-5 hour').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parsePlus('-5 hour').set({millisecond: 0}) ) }
     }, 
     '-5 Hour': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parse('-5 Hour').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parsePlus('-5 Hour').set({millisecond: 0}) ) }
     }, 
     '+5 hours': {
       run: function() { },
-      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parse('+5 hours').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parsePlus('+5 hours').set({millisecond: 0}) ) }
     }, 
     '+5 Hours': {
       run: function() { },
-      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parse('+5 Hours').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(5).hours().set({millisecond: 0}).equals( Date.parsePlus('+5 Hours').set({millisecond: 0}) ) }
     }, 
     '-5 hours': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parse('-5 hours').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parsePlus('-5 hours').set({millisecond: 0}) ) }
     }, 
     '-5 Hours': {
       run: function() { },
-      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parse('-5 Hours').set({millisecond: 0}) ) }
+      assert: function() {  return new Date().add(-5).hours().set({millisecond: 0}).equals( Date.parsePlus('-5 Hours').set({millisecond: 0}) ) }
     },     
         
     '+5 week': {
       run: function() { },
-      assert: function() {  return this.today.add(5).weeks().equals( Date.parse('+5 week') ) }
+      assert: function() {  return this.today.add(5).weeks().equals( Date.parsePlus('+5 week') ) }
     }, 
     '+5 Week': {
       run: function() { },
-      assert: function() {  return this.today.add(5).weeks().equals( Date.parse('+5 Week') ) }
+      assert: function() {  return this.today.add(5).weeks().equals( Date.parsePlus('+5 Week') ) }
     }, 
     '-5 week': {
       run: function() { },
-      assert: function() {  return this.today.add(-5).weeks().equals( Date.parse('-5 week') ) }
+      assert: function() {  return this.today.add(-5).weeks().equals( Date.parsePlus('-5 week') ) }
     }, 
     '-5 Week': {
       run: function() { },
-      assert: function() {  return this.today.add(-5).weeks().equals( Date.parse('-5 Week') ) }
+      assert: function() {  return this.today.add(-5).weeks().equals( Date.parsePlus('-5 Week') ) }
     }, 
     '+5 weeks': {
       run: function() { },
-      assert: function() {  return this.today.add(5).weeks().equals( Date.parse('+5 weeks') ) }
+      assert: function() {  return this.today.add(5).weeks().equals( Date.parsePlus('+5 weeks') ) }
     }, 
     '+5 Weeks': {
       run: function() { },
-      assert: function() {  return this.today.add(5).weeks().equals( Date.parse('+5 Weeks') ) }
+      assert: function() {  return this.today.add(5).weeks().equals( Date.parsePlus('+5 Weeks') ) }
     }, 
     '-5 weeks': {
       run: function() { },
-      assert: function() {  return this.today.add(-5).weeks().equals( Date.parse('-5 weeks') ) }
+      assert: function() {  return this.today.add(-5).weeks().equals( Date.parsePlus('-5 weeks') ) }
     }, 
     '-5 Weeks': {
       run: function() { },
-      assert: function() {  return this.today.add(-5).weeks().equals( Date.parse('-5 Weeks') ) }
+      assert: function() {  return this.today.add(-5).weeks().equals( Date.parsePlus('-5 Weeks') ) }
     }
   }
 });

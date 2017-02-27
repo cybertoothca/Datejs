@@ -937,13 +937,13 @@ $.extend(DatepickerInstance.prototype, {
 		var date = this._getDefaultDate();
 		if (dates.length > 0) {
 			if (dates.length > 1) {
-				date = Date.parse(dates[1]) || this._getDefaultDate();
+				date = Date.parsePlus(dates[1]) || this._getDefaultDate();
 				this._endDay = date.getDate();
 				this._endMonth = date.getMonth();
 				this._endYear = date.getFullYear();
 			}
 			try {
-				date =Date.parse(dates[0]) || this._getDefaultDate();
+				date =Date.parsePlus(dates[0]) || this._getDefaultDate();
 			}
 			catch (e) {
 				$.datepicker.log(e);

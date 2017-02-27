@@ -1058,7 +1058,7 @@
      * @param {String}   The string value to convert into a Date object [Required]
      * @return {Date}    A Date object or null if the string cannot be converted into a Date.
      */
-    $D.parse = function (s) {
+    $D.parsePlus = function (s) {
         var r = null; 
         if (!s) { 
             return null; 

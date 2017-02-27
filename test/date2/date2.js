@@ -3,7 +3,7 @@ var Date2 = function(x) {
 	this.hour = 0; this.minute = 0; this.second = 0; this.millisecond = 0;
 	if ( x instanceof String ) {
 		// TODO: convert parse to Date2
-		return Date2.parse(x);
+		return Date2.parsePlus(x);
 	} else if ( x instanceof Object ) {
 		this.set(x);
 	} else if (arguments.length == 0 ) {
