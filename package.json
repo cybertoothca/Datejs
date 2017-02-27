@@ -1,6 +1,6 @@
 {
   "name": "Datejs-parsePlus",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "Fork of the original Datejs library with the `parse` method renamed to `parsePlus`.  Avoids unpleasantness in Ember-Data.",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -15,10 +15,12 @@
     "name": "Fahad Alqahtani",
     "url": "https://github.com/alqfahad"
   },
-  "contributors": [{
-    "name": "Dan Nelson",
-    "email": "dnelson@cybertooth.ca",
-    "url": "https://github.com/nadnoslen"
-  }],
+  "contributors": [
+    {
+      "name": "Dan Nelson",
+      "email": "dnelson@cybertooth.ca",
+      "url": "https://github.com/nadnoslen"
+    }
+  ],
   "license": "Apache 2.0"
 }
