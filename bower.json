@@ -1,7 +1,7 @@
 {
   "name": "datejs-parsePlus",
   "description": "Fork of the original Datejs library with the `parse` method renamed to `parsePlus`.  Avoids unpleasantness in Ember-Data.",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.3",
   "main": "build/date.js",
   "authors": [
     "Dan Nelson <dnelson@cybertooth.ca>"
