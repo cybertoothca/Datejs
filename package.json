@@ -1,7 +1,7 @@
 {
-  "name": "Datejs",
-  "version": "1.0.0",
-  "description": "A Date library for browsers",
+  "name": "Datejs-parsePlus",
+  "version": "0.0.0",
+  "description": "Fork of the original Datejs library with the `parse` method renamed to `parsePlus`.  Avoids unpleasantness in Ember-Data.",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-jasmine": "^2.0.1",
@@ -11,6 +11,14 @@
     "run-sequence": "^1.1.0",
     "merge-stream": "^1.0.0"
   },
-  "author": "",
+  "author": {
+    "name": "Fahad Alqahtani",
+    "url": "https://github.com/alqfahad"
+  },
+  "contributors": [{
+    "name": "Dan Nelson",
+    "email": "dnelson@cybertooth.ca",
+    "url": "https://github.com/nadnoslen"
+  }],
   "license": "Apache 2.0"
 }

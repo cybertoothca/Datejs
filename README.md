@@ -1,3 +1,10 @@
+# Forked
+
+I have forked this valuable library in an attempt to use it in my EmberJS addons and applications.  The parsing
+power of this library appears unmatched on the client-side.
+
+
+
 ![](http://datejs.com/images/googlecode-header.jpg)![](http://datejs.com/images/googlecode-header.gif)
 
 ## Overview
@@ -108,68 +115,68 @@ The following list is only a small subset of hundreds of string formats which ca
 
 All CultureInfo files can be found in the `/trunk/source/globalization/` folder.
 
-The following `.parse()` samples use the `en-US.js` CultureInfo file.
+The following `.parsePlus()` samples use the `en-US.js` CultureInfo file.
 
 ``` javascript
-Date.parse('t')                 // Returns today's date.
-Date.parse('today')             // Returns today's date.
-Date.parse('tomorrow')          // Returns tomorrow's date.
-Date.parse('yesterday')         // Returns yesterday's date.
+Date.parsePlus('t')                 // Returns today's date.
+Date.parsePlus('today')             // Returns today's date.
+Date.parsePlus('tomorrow')          // Returns tomorrow's date.
+Date.parsePlus('yesterday')         // Returns yesterday's date.
 
-Date.parse('next friday')       // Returns the date of the next Friday.
-Date.parse('last monday')       // Returns the date of the previous Monday.
+Date.parsePlus('next friday')       // Returns the date of the next Friday.
+Date.parsePlus('last monday')       // Returns the date of the previous Monday.
 
-Date.parse('July 8th, 2004')    // Thu Jul 08 2004
-Date.parse('15-Jan-2004')       // Thu Jan 15 2004
+Date.parsePlus('July 8th, 2004')    // Thu Jul 08 2004
+Date.parsePlus('15-Jan-2004')       // Thu Jan 15 2004
 
-Date.parse('7/1/2004')          // Thu Jul 01 2004
-Date.parse('7.1.2004')          // Thu Jul 01 2004
-Date.parse('07.15.04')          // Thu Jul 15 2004
+Date.parsePlus('7/1/2004')          // Thu Jul 01 2004
+Date.parsePlus('7.1.2004')          // Thu Jul 01 2004
+Date.parsePlus('07.15.04')          // Thu Jul 15 2004
 
-Date.parse('July 23rd 2004')    // Fri Jul 23 2004
-Date.parse('Sat July 3, 2004')  // Sat Jul 03 2004
+Date.parsePlus('July 23rd 2004')    // Fri Jul 23 2004
+Date.parsePlus('Sat July 3, 2004')  // Sat Jul 03 2004
 
-Date.parse('10:30 PM EST')      // Wed Oct 31 2007 20:30:00
-Date.parse('10PM')              // Wed Oct 31 2007 22:00:00
+Date.parsePlus('10:30 PM EST')      // Wed Oct 31 2007 20:30:00
+Date.parsePlus('10PM')              // Wed Oct 31 2007 22:00:00
 
-Date.parse('t + 5d')            // Adds 5 days to today.
-Date.parse('today - 1 month')   // Subtracts 1 month from today.
+Date.parsePlus('t + 5d')            // Adds 5 days to today.
+Date.parsePlus('today - 1 month')   // Subtracts 1 month from today.
 
-Date.parse('+')                 // Add 1 day to today = tomorrow.
-Date.parse('- 3months')         // Subtract 3 months.
+Date.parsePlus('+')                 // Add 1 day to today = tomorrow.
+Date.parsePlus('- 3months')         // Subtract 3 months.
 
-Date.parse('+1year')            // Add a year to today.
-Date.parse('-12 months')        // Subtract 12 months (1 year) from today.
+Date.parsePlus('+1year')            // Add a year to today.
+Date.parsePlus('-12 months')        // Subtract 12 months (1 year) from today.
 
-Date.parse('July 4th')          // July 4th of this year.
-Date.parse('15')                // 15th day of current month/year.
+Date.parsePlus('July 4th')          // July 4th of this year.
+Date.parsePlus('15')                // 15th day of current month/year.
 
-Date.parse('July 8th, 2004, 10:30 PM')      // Thu Jul 08 2004 22:30:00
-Date.parse('2004-07-15T06:45:00')           // Thu Jul 15 2004 06:45:00
-Date.parse('Thu, 1 July 2004 22:30:00 GMT') // Thu Jul 01 2004 16:30:00
+Date.parsePlus('July 8th, 2004, 10:30 PM')      // Thu Jul 08 2004 22:30:00
+Date.parsePlus('2004-07-15T06:45:00')           // Thu Jul 15 2004 06:45:00
+Date.parsePlus('Thu, 1 July 2004 22:30:00 GMT') // Thu Jul 01 2004 16:30:00
 
-Date.parse('1997-07-16T19:20:15')           // ISO 8601 Formats
-Date.parse('1997-07-16T19:20:30+01:00')     // ISO 8601 with Timezone offset
-Date.parse('1985-04-12T23:20:50Z')          // RFC 3339 Formats
+Date.parsePlus('1997-07-16T19:20:15')           // ISO 8601 Formats
+Date.parsePlus('1997-07-16T19:20:30+01:00')     // ISO 8601 with Timezone offset
+Date.parsePlus('1985-04-12T23:20:50Z')          // RFC 3339 Formats
 ```
 
 #### Chaining
 
 ``` javascript
 Date.today().add({ months: 1, days: 5 }).is().fri()        // Add 1 month and 5 days, then check if that date is a Friday.
-Date.parse('10-July-2004').next().friday().add(-1).month() // Take in a date, then move to the next Friday and subtract a month.
+Date.parsePlus('10-July-2004').next().friday().add(-1).month() // Take in a date, then move to the next Friday and subtract a month.
 ```
 
 #### Comparison
 
 ``` javascript
-Date.today().equals( Date.parse('today'))                  // true|false
-Date.parse('last Tues').equals(Date.today())               // true|false
+Date.today().equals( Date.parsePlus('today'))                  // true|false
+Date.parsePlus('last Tues').equals(Date.today())               // true|false
 
-Date.equals(Date.today(), Date.parse('today'))             // true|false
-Date.compare(Date.today(), Date.parse('today'))            // 1 = greater, -1 = less than, 
+Date.equals(Date.today(), Date.parsePlus('today'))             // true|false
+Date.compare(Date.today(), Date.parsePlus('today'))            // 1 = greater, -1 = less than, 
 
-Date.today().compareTo(Date.parse('yesterday'))            // 1 = greater, -1 = less than, 0 = equal
+Date.today().compareTo(Date.parsePlus('yesterday'))            // 1 = greater, -1 = less than, 0 = equal
 Date.today().between(startDate, endDate)                   // true|false
 ```
 
@@ -278,7 +285,7 @@ Date.today().setTimeToNow()            // Resets the time to the current time (n
 
 ``` javascript
 // Parse ISO 8601 string
-Date.parse('\"1997-07-16T19:20:15\"')  // ISO 8601 string format with wrapping double-quotes
+Date.parsePlus('\"1997-07-16T19:20:15\"')  // ISO 8601 string format with wrapping double-quotes
 
 // Convert date to ISO 8601 string
 new Date().toISOString()               // Returns ISO 8601 string of date converted to it's UTC value. "2007-10-31T16:18:00Z"
